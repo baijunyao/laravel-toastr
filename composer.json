@@ -1,0 +1,25 @@
+{
+    "name": "baijunyao/laravel-toastr",
+    "description": "toastr",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "baijunyao",
+            "email": "baijunyao@baijunyao.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Baijunyao\\LaravelToastr\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Baijunyao\\LaravelToastr\\ToastrServiceProvider"
+            ]
+        }
+    }
+}
