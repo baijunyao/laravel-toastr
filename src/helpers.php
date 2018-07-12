@@ -1,5 +1,7 @@
 <?php
 
+use Baijunyao\LaravelJquery\Jquery;
+
 if (!function_exists('toastr_css')){
     /**
      * toastr css标签
@@ -25,13 +27,9 @@ if (!function_exists('toastr_js')){
     function toastr_js()
     {
         $toastrJsPath = asset('statics/toastr-2.1.1/toastr.min.js');
-        $jqueryJsPath = asset('statics/jquery-2.2.4/jquery.min.js');
+        $jquery = Jquery::unique();
         $toastrJs = <<<php
-<script>
-    (function(){
-        window.jQuery || document.write('<script src="$jqueryJsPath"><\/script>');
-    })();
-</script>
+$jquery
 <script src="$toastrJsPath"></script>
 <script>
     toastr.options = {
