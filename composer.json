@@ -13,7 +13,10 @@
     "autoload": {
         "psr-4": {
             "Baijunyao\\LaravelToastr\\": "src/"
-        }
+        },
+        "files": [
+            "src/helpers.php"
+        ]
     },
     "extra": {
         "laravel": {
