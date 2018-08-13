@@ -10,7 +10,7 @@ if (!function_exists('toastr_css')){
      */
     function toastr_css()
     {
-        $toastrCssPath = asset('statics/toastr-2.1.1/toastr.min.css');
+        $toastrCssPath = asset('statics/laravel-toastr/toastr.min.css');
         $toastrCss = <<<php
 <link href="$toastrCssPath" rel="stylesheet" type="text/css" />
 php;
@@ -26,7 +26,7 @@ if (!function_exists('toastr_js')){
      */
     function toastr_js()
     {
-        $toastrJsPath = asset('statics/toastr-2.1.1/toastr.min.js');
+        $toastrJsPath = asset('statics/laravel-toastr/toastr.min.js');
         $jquery = Jquery::unique();
         $toastrJs = <<<php
 $jquery
